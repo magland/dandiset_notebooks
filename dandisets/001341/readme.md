@@ -8,6 +8,8 @@ A user responsible for creating the content will instruct cline to "follow the i
 
 If the neurosift-tools MCP is not installed, then the user should be prompted to install it.
 
+For all generated notebooks, prominently inform the user that the notebook was AI-generated and has not been fully verified by humans, and that they should be cautious when interpreting the code or results.
+
 You should make use of the tools in neurosift-tools to generate the content for this directory.
 
 Create a notebook.py with "# %%" delimiters. This is an introduction to Dandiset 001341 with illustrative plots. Please include plenty of comments to describe the experiment and the data. The examples and plots should help the user get started in loading and processing the data.
@@ -22,11 +24,17 @@ If you are going to load a subset of data, it doesn't make sense to load all of 
 
 When loading data for illustration, be careful about the size of the data, since the files are hosted remotely and datasets are streamed over the network. You may want to load subsets of data. But if you do, please be sure to indicate that you are doing so, so the reader doesn't get the wrong impression about the data.
 
+If you want to investigate some aspects of the data prior to making the notebook, you can write a temporary python script called something like scratch1.py and run it to see the output. This may give you information about the content of the data that you wouldn't have by just using the available tools. However, it's important that you use the nwb_file_info tool from neurosift-tools prior to trying to do anything with an NWB file.
+
+Keep in mind that through your tool calls you have been given information about what data is available in the files, whereas the reader of the notebook does not have access to that information. So in your illustration it might be helpful to show how they could get that information (e.g., columns in a table, etc).
+
 Do not worry about pynwb typing errors from the linter.
 
 You can ask the user to try it out.
 
 Once satisfied, you can convert to notebook.ipynb using `jupytext --to notebook notebook.py`
+
+Finally, use nbconvert to run that notebook and fill in the output cells in place.
 
 ## Dandiset-specific information
 
@@ -39,3 +47,9 @@ For others time series data, you should just load the first 1000 timepoints or s
 Show how to load the units data, and perhaps plot some quality metrics, spike trains, keeping aware to not download too much data.
 
 Then you could try making a simple Peri-Stimulus Time Histogram (PSTH) plot.
+
+When referring to units, use the unit ID rather than the unit index.
+
+If you are going to display a raster plot, make sure the time window is long enought that you at least get some spikes.
+
+It's nice to pick some quality metrics to highlight, but you should also show the user how to get a list of all the quality metrics available.
