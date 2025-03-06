@@ -10,6 +10,8 @@ REMEMBER: After you create each script, be sure to execute it so that you can us
 
 REMEMBER: After executing each script, if you created plots, please ask the user to comment on the plots before proceeding.
 
+You may see other tmp_scripts directories in this repository. Do not pay attention to those. You should choose the naming of scripts that is appropriate for this Dandiset regardless of what scripts might be named in other places in the repo.
+
 Then create a jupytext notebook.py in the Dandiset directory. Use "# %%" delimiters for the cells.
 
 Prominently inform the user that the notebook was AI-generated with human supervision and has not been fully verified, and that they should be cautious when interpreting the code or results.
