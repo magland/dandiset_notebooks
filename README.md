@@ -4,7 +4,9 @@ This repository helps create interactive notebooks for exploring and analyzing D
 
 ## Usage
 
-To create a notebook for a DANDI dataset, tell Cline:
+First clone this repo and open in it vscode. You'll need to install and configure the Cline vscode extension.
+
+To create a notebook for a DANDI dataset, simply tell Cline:
 
 ```
 Let's make a notebook for Dandiset XXXXXX
