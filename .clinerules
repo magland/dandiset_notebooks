@@ -1,0 +1,17 @@
+# Create a Dandiset for a notebook.
+
+If the user says something like "Let's make a notebook for Dandiset XXXXXX" do the following
+
+Create a new directory scratch/dandisets/XXXXXX/yyyy-mm-dd-x where yyyy-mm-dd is a timestamp and x is an integer to distinguish multiple directories made on the same day.
+
+In that directory, make a readme.md based on the template in templates/readme.md, except replace XXXXXX with the Dandiset ID
+
+Copy the templates/notebook_guidelines.md to the directory
+
+Follow the instructions in the new readme.md file
+
+Here are some Dandiset-specific notes that you should include at the bottom of the readme.md file where appropriate.
+
+001341:
+
+There seems to be a problem in the trials table where the stop_time is incorrect. Instead of "start_time" and "stop_time", you should instead use the "file_start_time" and "file_stop_time" columns for now.
