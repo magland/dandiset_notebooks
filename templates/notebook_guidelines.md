@@ -32,7 +32,7 @@ Keep in mind that through your tool calls you have been given information about 
 
 Do not worry about pynwb typing errors from the linter.
 
-After you have created notebook.py can ask invite the user to try it out.
+After you have created notebook.py you can invite the user to try it out and provide any feedback.
 
 Once they are satisfied, you can convert to notebook.ipynb using `jupytext --to notebook notebook.py`
 
