@@ -4,7 +4,7 @@ This repository helps create interactive notebooks for exploring and analyzing D
 
 ## Usage
 
-First clone this repo and open in it VS Code. You'll need to install and configure the Cline VS Code extension.
+First clone this repo and open in it VS Code. You'll need to install and configure the Cline VS Code extension. You will also need to install the neurosift-tools MCP in Cline (see below).
 
 To create a notebook for a DANDI dataset, simply tell Cline:
 
@@ -24,6 +24,13 @@ Cline will:
    - Converting and executing the final notebook
 
 Since the Cline cannot view and interpret plots and graphs, you'll need to be the eyes for Cline. At various points, it will ask you to describe what you see in the .png files that it creates. This will help it to know how to make an informative notebook.
+
+## To install the neurosift-tools MCP in Cline
+
+It's defined here:
+https://github.com/flatironinstitute/neurosift/tree/main-v2/mcps/neurosift-tools
+
+Cline can help you install it. :)
 
 
 ## Project Structure
