@@ -28,7 +28,7 @@ Note that it doesn't work to try to index an h5py.Dataset with a numpy array of 
 
 Note that you cannot do operations like np.sum over a h5py.Dataset. You need to get a numpy array using something like dataset[:]
 
-If you are going to load a subset of data, it doesn't make sense to load all of the timestamps in memory and then select a subset. Instead, you should load the timestamps for the subset of data you are interested in. So we shouldn't ever see something like `dataset.timestamps[:]` unless we intend to load all the timestamps.
+If you are going to load a subset of data, it doesn't make sense to load all the timestamps in memory and then select a subset. Instead, you should load the timestamps for the subset of data you are interested in. So we shouldn't ever see something like `dataset.timestamps[:]` unless we intend to load all the timestamps.
 
 When loading data for illustration, be careful about the size of the data, since the files are hosted remotely and datasets are streamed over the network. You may want to load subsets of data. But if you do, please be sure to indicate that you are doing so, so the reader doesn't get the wrong impression about the data.
 

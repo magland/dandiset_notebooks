@@ -1,4 +1,0 @@
-I had to give thorough feedback on the figures that were generated.
-
-Tokens: 1.1m / 24.7k
-Cost: $1.45

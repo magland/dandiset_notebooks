@@ -8,7 +8,7 @@ In that directory, make a readme.md based on the template in templates/readme.md
 
 Copy the templates/notebook_guidelines.md to the directory
 
-Follow the instructions in the new readme.md file
+Follow the instructions in the new readme.md and notebook_guidelines.md files
 
 Here are some Dandiset-specific notes that you should include at the bottom of the readme.md file where appropriate.
 
